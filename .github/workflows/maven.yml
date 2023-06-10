@@ -35,8 +35,8 @@ jobs:
       id: build
       uses: cloudposse/github-action-docker-build-push@main
       with:
-        registry: registry.hub.docker.com
-        repository: "mahesh430/test1:tagname"
+        registry: docker.io
+        repository: "mahesh430/test1"
         login: "${{ secrets.DOCKERHUB_USERNAME }}"
         password: "${{ secrets.DOCKERHUB_PASSWORD }}"
  
